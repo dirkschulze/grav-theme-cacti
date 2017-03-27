@@ -1,10 +1,9 @@
 enabled: true
-author: Wilberforce Humphries
+author: Dirk Schulze
 title_header: false
 home_profile: true
 infinite_scroll: true
 analytics: UA-YOURCODE
 social:
-    twitter: @getgrav
-    facebook: rockettheme
+    twitter: @dirkschulze
 
