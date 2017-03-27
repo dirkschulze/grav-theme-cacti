@@ -55,6 +55,7 @@ body {
 	color: #666;
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
+	counter-reset: figure;
 }
 
 h1 {
@@ -694,4 +695,17 @@ h2.month {
 	.post h2.headline { font-size: 13px; }
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
+}
+
+/* Figcaption */
+figcaption {
+	padding-left: 20px;
+	margin-bottom: 15px;
+	font-size: 95%;
+	font-style: italic;
+}
+figcaption::before {
+	counter-increment: figure;
+	font-weight: bold;
+	content: "Fig. " counter(figure) ": ";
 }
